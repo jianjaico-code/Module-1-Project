@@ -1,13 +1,13 @@
 {
-  "name": "module-1",
+  "name": "Module-1",
   "version": "1.0.0",
-  "description": "",
+  "description": "Individual Project for Module 1",
   "main": "main.js",
   "scripts": {
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jian Jaico",
   "license": "ISC",
   "dependencies": {
     "@babel/preset-env": "^7.19.1",
