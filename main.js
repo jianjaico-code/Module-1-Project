@@ -23,10 +23,10 @@ export function search() {
   //Write your code here for the search function
 }
 
-export function filter(type) {
+export function sort(type) {
   if (type == "ascending") {
-    //Write your code here for the ascending filter
+    //Write your code here for sorting (ascending)
   } else {
-    //Write your code here for the descending filter
+    //Write your code here for sorting (descending)
   }
 }

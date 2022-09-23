@@ -1,4 +1,4 @@
-import { filter, search, newsList } from "../../main.js";
+import { sort, search, newsList } from "../../main.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   reloadDOM(newsList);
@@ -10,23 +10,26 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.getElementById("filter-btn-1").addEventListener("click", () => {
-    var result = filter("ascending");
+    var result = sort("ascending");
 
     reloadDOM(result);
   });
 
   document.getElementById("filter-btn-2").addEventListener("click", () => {
-    var result = filter("descending");
+    var result = sort("descending");
 
     reloadDOM(result);
   });
 });
 
 function reloadDOM(newArray) {
-  let constructedDOM = "";
-  newArray.forEach(
-    (value) => (constructedDOM += `<div class="news-list-item">${value}</div>`)
-  );
+  if (typeof newArray != "undefined") {
+    let constructedDOM = "";
+    newArray.forEach(
+      (value) =>
+        (constructedDOM += `<div class="news-list-item">${value}</div>`)
+    );
 
-  document.getElementById("news-list-container").innerHTML = constructedDOM;
+    document.getElementById("news-list-container").innerHTML = constructedDOM;
+  }
 }

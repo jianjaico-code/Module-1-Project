@@ -1,4 +1,4 @@
-import { filter, search, newsList } from "./main.js";
+import { sort, search, newsList } from "./main.js";
 
 //Example testing for search function
 test("Search function testing", () => {

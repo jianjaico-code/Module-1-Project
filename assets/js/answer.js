@@ -17,7 +17,7 @@ export function search() {
   );
 }
 
-export function filter(type) {
+export function sort(type) {
   if (type == "ascending") {
     return newsList.sort((a, b) => (a < b ? -1 : 1));
   } else {
